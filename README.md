@@ -8,10 +8,10 @@ Diversity estimation pipeline for high-throughput sequencing (Illumina) platform
 * J Pawlowski, P Esling, F Lejzerowicz, T Cedhagen, T Wilding "Environmental monitoring through protist NGS metabarcoding: assessing the impact of fish farming on benthic foraminifera communities", *Molecular Ecology Resources*, in review.
 
 This pipeline has been developped in C language for fast processing. In order to use the pipeline on raw (FASTQ) data, prior to the publication and disclosure of its inner methods, we pre-compiled the software for different architectures. Hence, you can find here the executables for the pipeline :
-**illuminaPipeline-Unix**
-**illuminaPipeline-MacOS**
+* **illuminaPipeline-Unix**
+* **illuminaPipeline-MacOS**
 
 In all cases, we will refer to these executables as **illuminaPipeline** in the following.
 
 In order to produce an output of assembly, diversity estimation and statistics, the program should be called in the following manner (in a terminal window)
-./illuminaPipeline **-forwardFile** *<Path to R1 FastQ>* **-reverseFile** *<Path to R1 FastQ>*  **-taggingFile** *<Path to list of tags (fasta)>* **-outputDir** *<Path to directory for results>*  **-meanQual** *<Mean read Q (int)>*  **-minBase** *<Minimum Q of a base>* **-maxAmb** *<Maximum number of ambiguous>* **-primMiss** *<Number of errors in primer>* **-tagMiss** *<Number of errors in tag>*
+./illuminaPipeline **-forwardFile** *\<Path to R1 FastQ\>* **-reverseFile** *<Path to R1 FastQ>*  **-taggingFile** *<Path to list of tags (fasta)>* **-outputDir** *<Path to directory for results>*  **-meanQual** *<Mean read Q (int)>*  **-minBase** *<Minimum Q of a base>* **-maxAmb** *<Maximum number of ambiguous>* **-primMiss** *<Number of errors in primer>* **-tagMiss** *<Number of errors in tag>*
