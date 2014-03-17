@@ -13,5 +13,6 @@ This pipeline has been developped in C language for fast processing. In order to
 
 In all cases, we will refer to these executables as **illuminaPipeline** in the following.
 
-In order to produce an output of assembly, diversity estimation and statistics, the program should be called in the following manner (in a terminal window)\\
+In order to produce an output of assembly, diversity estimation and statistics, the program should be called in the following manner (in a terminal window)
+
 ./illuminaPipeline **-forwardFile** *\<Path to R1 FastQ\>* **-reverseFile** *\<Path to R1 FastQ\>*  **-taggingFile** *\<Path to list of tags (fasta)\>* **-outputDir** *\<Path to directory for results\>*  **-meanQual** *\<Mean read Q (int)\>*  **-minBase** *\<Minimum Q of a base\>* **-maxAmb** *\<Maximum number of ambiguous\>* **-primMiss** *\<Number of errors in primer\>* **-tagMiss** *\<Number of errors in tag\>* **-taxonomyFile** *\<Path to taxonomy database (fasta)\>*
